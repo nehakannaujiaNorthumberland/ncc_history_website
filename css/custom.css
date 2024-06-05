@@ -1,0 +1,434 @@
+:root {
+	--primary-color: #005596;
+	--secondary-color: #001C47;
+	--text-color: #000;
+	--border-radius: 6px;
+  }
+
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .mobile-only{
+    display: inline-block;
+}
+.mega-menu-content{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.govuk-header{
+    background-color: white;
+    color: black;
+}
+.govuk-header  * {
+    color: black;
+}
+
+.ncc-header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-list{
+    display: none;
+}
+.ncc_header_logo {
+    flex: 1;
+    padding: .8rem 0;
+}
+
+.btn {
+	display: flex; 
+	align-items: center;
+	padding: .7rem 1rem;
+	gap: .8rem;
+	border-radius: var(--border-radius);
+	cursor: pointer;
+	background-color: #ffffff;
+	border: none;
+  }
+
+  .btn-primary {
+	background-color: var(--primary-color);
+  }
+  .btn > .btn__text {
+	text-decoration: underline;
+	text-underline-offset: 2px;
+    color: white;
+    font-weight: 600;
+  }
+
+  .btn > span.btn_icon {
+	font-size: 1.2rem;
+    color: white;
+  }
+
+  .btn-primary-color{
+    background-color: var(--primary-color) !important;
+    color: white;
+  }
+
+  .btn-primary:hover, .btn-primary:active, .btn-primary-color:hover{
+	 background-color: var(--secondary-color) !important;
+  }
+
+  .information-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+  }
+  .text-content {
+    flex-basis: 100%;
+  }
+  .card-content{
+    width: 100%;
+    text-align: center;
+    border-radius: 1rem;
+  }
+  .img-container{
+    padding: 1rem;
+  }
+  .img-container > img{
+    width: 60%;
+    height: auto;
+    object-fit: cover;
+  }
+  .extra-info{
+    padding: 0 1.5rem;
+  }
+  .extra-info *{
+    font-size: 1rem;
+  }
+
+  .Image-container{
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+  .Image-container > img{
+    width: 100%;
+    max-height: 22rem;
+    object-fit: cover;
+  }
+  .govuk-accordion__section-button{
+    font-size: 1.25rem !important;
+  }
+  .text_black{
+    color:black !important;
+  }
+
+.card_container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+  align-items: flex-end;
+  gap: 1rem;
+}
+.card-image{
+  width: 100%;
+}
+.card-image > img{
+  width: 100%;
+  max-height: 15rem;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.st_mary_logo{
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-family: inherit;
+}
+img{
+  border-radius: 5px;
+}
+.image-gallery{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1rem;
+  align-items: center;
+}
+
+.image-gallery > img{
+  width : 45%;
+}
+
+.img-width-70{
+  width: 70% !important;
+}
+.img-width-60{
+  width: 55% !important;
+}
+.img-width-50{
+  width: 45% !important
+}
+.img-width-30{
+  width: 40% !important;
+}
+.img-width-100{
+  width:100% !important;
+}
+
+.ncc-footer-item{
+	display: flex;
+	flex-direction: column;
+}
+
+
+.ncc-footer__meta{
+	display: flex;
+	flex-wrap: wrap-reverse;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 2rem;
+	gap: .5rem;
+}
+.ncc-footer-logo{
+	display: flex;
+	flex-direction: column;
+}
+.footer-icons{
+	display: flex;
+	gap:1rem;
+	justify-content: flex-start;
+}
+.footer-icons_style{
+	font-size: 1.5rem; 
+	color: black;
+}
+.footer_image_container > img{
+	width:160px
+}
+.footer_copyright{
+	font-size: 1rem;
+	line-height: 1.5rem;
+	font-weight: 400;
+}
+.ncc_footer_link:hover{
+	box-shadow: 0 0 0 2px var(--secondary-color);
+	border-radius: 4px;
+}
+
+
+  @media (min-width: 641px) {
+    .text-content {
+        flex-basis: 50%;
+      }
+      .card-content{
+        width: 50%;
+        text-align: center;
+      }
+   
+    .mobile-only{
+        display: none;
+    }
+    .mega-menu-container{
+        display: none;
+    }
+    .menu-list{
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+    }
+    .img-container > img{
+        width: 200px;
+        object-fit: cover;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      .extra-info{
+        padding: 0 2rem;
+      }
+      .img-container{
+        padding: 0 1rem 1rem 1rem;
+      }
+      .image-gallery > img{
+        width : 40%;
+      }
+      .img-width-60{
+  width: 60% !important;
+
+}
+
+.img-width-30{
+  width: 30% !important;
+
+}
+
+
+}
+@media (min-width: 800px) {
+  .card-image{
+    width: 40%;
+  }
+  .card-image > img{
+    width: 100%;
+    object-fit: cover;
+    min-height: 20rem;
+    
+  }
+  .card-content-container{
+    width: 55%;
+  }
+  .st_mary_logo{
+    font-size: 2rem;
+    
+  }
+  .image-gallery > img{
+    width : 31%;
+  }
+
+  .img-width-50{
+    width: 46% !important
+  }
+}
+
+@media (min-width: 1135px) {
+ 
+    .govuk-width-container{
+         max-width: 1100px;
+    }
+    .Image-container > img{
+      width: 100%;
+      max-height: 30rem;
+      object-fit: cover;
+    }
+    .img-container > img{
+        width: 300px;
+        object-fit: cover;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      .extra-info{
+        padding: 0 6rem;
+      }
+}
+
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: black;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid var(--primary-color);
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+
+
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 641x) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+.img-container-st_mary{
+  padding: 0 1rem 1rem 1rem !important;
+}
